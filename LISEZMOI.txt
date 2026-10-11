@@ -1,0 +1,31 @@
+BIDULOTRON — site généré par NabuSite AI
+==============================================
+
+Ce dossier contient un site Web statique complet et autonome :
+
+  - index.html : Accueil
+  - services.html : Services
+  - projets.html : Projets
+  - a-propos.html : À propos
+  - contact.html : Contact
+  - css/style.css, js/site.js : mise en forme et petits effets
+  - images/ : photos du site
+
+Voir le site sur un ordinateur
+------------------------------
+Ouvrir index.html dans un navigateur fonctionne pour un aperçu rapide.
+Pour un rendu identique à la mise en ligne, servir le dossier avec un
+petit serveur local, par exemple :  python3 -m http.server 8000
+puis ouvrir http://localhost:8000
+
+Mettre le site en ligne
+-----------------------
+Déposer TOUT le contenu de ce dossier (pas le dossier lui-même) à la racine
+d'un hébergement de site statique : GitHub Pages, Netlify, Cloudflare Pages
+ou l'espace Web de votre hébergeur. La page d'accueil est index.html.
+
+Modifier le site
+----------------
+Les modifications se font dans l'application NabuSite AI, qui régénère le
+site. Une modification faite à la main dans ces fichiers serait perdue au
+prochain export.
