@@ -1,15 +1,32 @@
 BIDULOTRON — site généré par NabuSite AI
-==============================================
+========================================
 
-Ce dossier contient un site Web statique complet et autonome :
+Ce dossier contient un site Web statique complet et autonome : aucun
+logiciel, aucune base de données et aucun service externe ne sont
+nécessaires pour l'afficher.
 
+Contenu
+-------
   - index.html : Accueil
-  - services.html : Services
-  - projets.html : Projets
-  - a-propos.html : À propos
-  - contact.html : Contact
-  - css/style.css, js/site.js : mise en forme et petits effets
-  - images/ : photos du site
+  - services/index.html : Services
+  - projets/index.html : Projets
+  - a-propos/index.html : À propos
+  - contact/index.html : Contact
+  - css/style.css : mise en forme
+  - js/site.js : menu mobile et petits effets (le site reste lisible sans)
+  - images/ : 20 fichier(s) d'image utilisés par le site
+  - robots.txt, sitemap.xml : indications pour les moteurs de recherche
+
+Adresses sans « .html » : chaque page est dans son dossier (contact/index.html).
+Elles fonctionnent chez un hébergeur ; en ouvrant les fichiers directement
+sur un ordinateur, utilise le petit serveur local décrit plus bas.
+
+État du site
+------------
+Adresse publique : https://StephaneG-frep.github.io/Bidulotron/
+Formulaire de contact : aucun. Les visiteurs utilisent les liens directs
+(téléphone, e-mail, WhatsApp) affichés dans la section Contact.
+Contenus « À compléter » : aucun.
 
 Voir le site sur un ordinateur
 ------------------------------
@@ -20,9 +37,17 @@ puis ouvrir http://localhost:8000
 
 Mettre le site en ligne
 -----------------------
-Déposer TOUT le contenu de ce dossier (pas le dossier lui-même) à la racine
-d'un hébergement de site statique : GitHub Pages, Netlify, Cloudflare Pages
-ou l'espace Web de votre hébergeur. La page d'accueil est index.html.
+Le plus simple : NabuSite AI → menu ⋮ → « Publier en ligne ».
+À la main, déposer TOUT le contenu de ce dossier (pas le dossier lui-même),
+avec index.html à la racine :
+  - GitHub Pages : créer un dépôt, y envoyer les fichiers, puis Settings →
+    Pages → « Deploy from a branch » (branche main, dossier / root).
+  - Netlify : app.netlify.com/drop → déposer le dossier.
+  - Cloudflare Pages : Workers & Pages → Créer → Pages → Téléverser des
+    ressources → déposer le dossier ou son archive ZIP.
+  - Hébergement classique (OVH, o2switch, Hostinger…) : envoyer les fichiers
+    dans le dossier public (www, public_html ou htdocs) par le gestionnaire
+    de fichiers ou par FTP, puis activer HTTPS.
 
 Modifier le site
 ----------------
